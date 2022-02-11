@@ -1,0 +1,41 @@
+Get http://localhost:3000/places
+
+###
+
+Get http://localhost:3000/places/3
+
+###
+
+POST http://localhost:3000/places
+Content-Type: application/json
+
+
+{
+
+   "name": "SplashDown",
+   "location":"Fishkill,NY",
+   "touristQuantity":"Heavy",
+   "description":"Expansive full water park with all the thrills needed to dry you off afterward",
+   "imageUrl":"https://assets.simpleviewinc.com/simpleview/image/upload/c_fit,w_800,h_600/crm/dutchessny/1485448128-1192_8b47e351-5056-a36a-097ae144be130d14.jpg"
+
+}
+
+###
+
+
+Patch http://localhost:3000/places/6
+Content-Type: application/json
+
+{
+  
+  "name": "Disney World",
+  "location":"Lake Buena Vista, FL",
+  "touristQuantity":"Heavy",
+  "description":"The property covers nearly 39 square miles, of which half has been used. The resort comprises four theme parks (Magic Kingdom, Epcot, Disney's Hollywood Studios, and Disney's Animal Kingdom), two water parks (Disney's Blizzard Beach and Disney's Typhoon Lagoon), 31 themed resort hotels, nine non-Disney hotels, several golf courses, a camping resort, and other entertainment venues, including the outdoor shopping center Disney Springs.",
+  "imageUrl":"https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/433/433/75/vision-dam/digital/parks-platform/parks-global-assets/disney-world/0526ZP_1270MS_xak_R2-1x1.jpg?2021-08-05T12:44:38+00:00"
+
+}
+
+###
+
+DELETE http://localhost:3000/places/2
